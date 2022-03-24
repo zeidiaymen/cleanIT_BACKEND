@@ -28,6 +28,7 @@ router.put("/updat/:id", controller.withoutPic);
 
 //sendMail
 router.post("/send", controller.verifyJWT, controller.emailSender);
+
 router.get("/EmailFace/:email", (req, res) => {
   const email = req.params.email;
 

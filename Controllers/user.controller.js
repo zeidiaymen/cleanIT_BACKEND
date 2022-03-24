@@ -74,6 +74,8 @@ var login = (req, res) => {
       console.log(user);
       if (user.length > 0) {
         const token = jwt.sign({ user }, "algorithm");
+
+      
         console.log(user[0]._id, "hahaha");
         var js = {
           token: token,
